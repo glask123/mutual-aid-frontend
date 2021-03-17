@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashcontainer {
+  width: 550px;
+  height: 300px;
+  border: 7px solid #b88e8d;
+  -webkit-box-shadow: inset 0px 0px 17px 1px rgba(184, 142, 141, 0.5);
+  box-shadow: inset 0px 0px 17px 1px rgba(184, 142, 141, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  z-index: 6;
+  transition: width 250ms ease-in-out, height 250ms ease-in-out;
+}
+
+.splashcontainer:hover {
+  width: 560px;
+  height: 310px;
+}
+
+.fade {
+  z-index: 8;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  color: #0e1a22;
+  text-shadow: 0px 0px 4px #0d324d11;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+}
+
+.comingsoon {
+  color: #0e1a22;
+  text-shadow: 0px 0px 4px #0d324d11;
+  font-family: "Lora";
+  font-style: italic;
+}
+
+.noise {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/noise.png");
+  position: absolute;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+.socials {
+  width: 70%;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 90%;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+  z-index: 6;
+  transition: opacity 250ms ease-in-out;
+}
+
+.image:hover {
+  opacity: 0.6;
+}
+
+.disclaimer {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-family: "Lora";
+  font-size: 10px;
+  font-style: italic;
+  opacity: 0.5;
+}
