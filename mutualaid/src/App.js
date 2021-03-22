@@ -5,13 +5,16 @@ import NewRequest from "./components/newrequest";
 import Request from "./components/request";
 import RequestSubmitted from "./components/requestsubmit";
 import Login from "./components/login";
+import Home from "./components/home";
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Splash} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/splash" component={Splash} />
         <Route path="/about" />
         <Route path="/donate" />
+        <Route path="/contact" />
         <Route path="/login" component={Login} />
         <Route exact path="/request" component={Request} />
         <Route path="/request/returning" />
