@@ -1,10 +1,14 @@
 import React from "react";
 import "../css/home.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <div className="homebody">
+      <Helmet>
+        <title>Login | Bricklayers Collective</title>
+      </Helmet>
       <div className="nav">
         <h1>Bricklayers Collective</h1>
         <Link to="/">
