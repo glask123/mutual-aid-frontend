@@ -1,0 +1,30 @@
+.form {
+  width: 50%;
+}
+
+.label {
+}
+
+.forminput {
+}
+
+.slider {
+}
+
+.slidertext {
+}
+
+.description {
+}
+
+.submit {
+}
+
+.newrequestbody {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

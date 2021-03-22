@@ -2,10 +2,14 @@ import React from "react";
 import Insta from "../assets/insta.png";
 import Mail from "../assets/mail.png";
 import FadeIn from "react-fade-in";
+import { Helmet } from "react-helmet";
 
 export default function Splash() {
   return (
     <div className="splash">
+      <Helmet>
+        <title>Home | Bricklayers Collective</title>
+      </Helmet>
       <FadeIn className="fade">
         <div className="splashcontainer">
           <h1 className="text title">Bricklayers Collective</h1>
