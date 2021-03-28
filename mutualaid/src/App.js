@@ -7,6 +7,7 @@ import RequestSubmitted from "./components/requestsubmit";
 import Login from "./components/login";
 import Home from "./components/home";
 import Contact from "./components/contact";
+import Admin from "./components/admin";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" />
         <Route path="/donate" />
         <Route path="/contact" component={Contact} />
+        <Route path="/admin" component={Admin} />
         <Route path="/login" component={Login} />
         <Route exact path="/request" component={Request} />
         <Route path="/request/returning" />
