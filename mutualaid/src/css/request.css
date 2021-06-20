@@ -1,25 +1,154 @@
 .requestbody {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.new {
+  flex-direction: column;
 }
 
 .request {
-  width: 45%;
-  height: 95%;
-  border: 1px solid black;
+  margin: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #0d1321;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 250ms ease-in-out;
+  transition: background-color 200ms ease-in;
   text-decoration: none;
-  color: black;
+  color: #f1f0e1;
+  font-weight: 500;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 .request:hover {
-  opacity: 0.5;
+  background-color: #6689a1;
   cursor: pointer;
+}
+
+fieldset {
+  border: 3px solid #6689a1;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+legend {
+  font-weight: 600;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 17px;
+  color: #6689a1;
+}
+
+.submit {
+  width: 48%;
+  height: 35px;
+  background-color: #0d1321;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.forminput {
+  border: 2px solid #b88e8d;
+  border-radius: 5px;
+  height: 30px;
+  outline: none;
+  background: none;
+  padding: 3px;
+  margin-bottom: 7px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="range"] {
+  margin-left: 4px;
+  cursor: ew-resize;
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  box-sizing: border-box;
+  flex: 1;
+  height: 8px;
+  background: #b6b6b6;
+  outline: none;
+  border-radius: 2px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  background-color: #6689a1; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 3px;
+}
+
+.sliderinput {
+  border: 2px solid #b88e8d;
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.sliderlabel {
+  margin-left: 7px;
+  width: 15px;
+}
+
+.order {
+  width: calc(100% - 40px);
+  background-color: #6f94aa;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: opacity 100ms ease-in;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.order-section {
+  flex-grow: 1;
+}
+
+.order:hover {
+  opacity: 0.9;
+}
+
+.returning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/request.css";
+import "../../css/request.css";
 
 export default function Request() {
   return (
     <div className="requestbody">
       <Link to="/request/new" className="request">
-        <div>Make a Request</div>
+        Make a Request
       </Link>
       <Link to="/request/returning" className="request">
-        <div>Check Request Status</div>
+        Check Request Status
       </Link>
     </div>
   );
